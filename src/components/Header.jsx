@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion';
 import { a } from 'framer-motion/client';
+import {FiGithub , FiFacebook , FiLinkedin} from 'react-icons/fi';
 
 const Header = () => {
   return (
@@ -48,6 +49,43 @@ const Header = () => {
           </motion.a>
         ))}
       </nav>
+
+      {/* Social Icons Desktop */}
+
+      <div className='md:flex hidden items-center space-x-4'>
+        {/* Github Icon */}
+        <motion.a 
+        initial={{ opacity: 0, scale: 0.5}}
+        animate={{opacity: 1, scale: 1}}
+        transition={{delay: 1.3, duration: 0.5}}
+        className='text-gray-700 dark:text-gray-300 hover:text-violet dark:hover:text-violet-400 
+        transition-colors duration-300' 
+        href="#">
+          <FiGithub className='w-5 h-5' />
+        </motion.a>
+
+        {/* Facebook Icon */}
+        <motion.a 
+        initial={{ opacity: 0, scale: 0.5}}
+        animate={{opacity: 1, scale: 1}}
+        transition={{delay: 1.3, duration: 0.5}}
+        className='text-gray-700 dark:text-gray-300 hover:text-violet dark:hover:text-violet-400 
+        transition-colors duration-300' 
+        href="#">
+          <FiFacebook className='w-5 h-5' />
+        </motion.a>
+
+        {/* LinkedIn Icon */}
+        <motion.a 
+        initial={{ opacity: 0, scale: 0.5}}
+        animate={{opacity: 1, scale: 1}}
+        transition={{delay: 1.3, duration: 0.5}}
+        className='text-gray-700 dark:text-gray-300 hover:text-violet dark:hover:text-violet-400 
+        transition-colors duration-300' 
+        href="#">
+          <FiLinkedin className='w-5 h-5' />
+        </motion.a>
+      </div>
 
 
       </div>
