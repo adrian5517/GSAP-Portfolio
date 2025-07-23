@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply font-sans;
+  
   overflow-x: hidden;
   margin: 0;
   padding:0;
