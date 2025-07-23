@@ -120,13 +120,56 @@ const Header = () => {
           {isOpen ? <FiX className='w-6 h-6' /> : <FiMenu className='w-6 h-6' />}
         </motion.button>
       </div>
-
-
       </div>
 
-      
-      
+      {/* Mobile Menu */}
+      <motion.div 
+      initial={{ opacity : 0, height: 0 }}
+      animate={{
+        opacity: isOpen ? 1 : 0,
+        height: isOpen ? "auto" : 0,
+      }}
+      transition={{
+        duration: 0.5
+      }}
+      className='md:hidden overflow-hidden bg-white dark:bg-gray-900
+      shadow-lg px-4 py-5 space-y-5'>
+        <nav className='flex flex-col space-y-4 font-poppins'>
+          {["Home","About", "Projects", "Contact"].map((item)=>(
+            <a 
+            className='text-gray-300 font-medium py-2'
+            onClick={toggleMenu}
+            key={item}
+            href='#'>{item}</a>
+          ))}
+        </nav>
 
+        <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+          <div className='flex space-x-5'>
+
+          <a href="#">
+            <FiGithub className='w-5 h-5' text-gray-300/>
+          </a>
+
+           <a href="#">
+            <FiFacebook className='w-5 h-5' text-gray-300/>
+          </a>
+
+           <a href="#">
+            <FiLinkedin className='w-5 h-5' text-gray-300/>
+          </a>
+
+          </div>
+
+          <button 
+          onClick={()=>{
+            toggleMenu();
+          }}
+          className='mt-4 block w-full px-4 py-2 font-poppins text-center text-white
+          rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-semibold'>Contact me</button>
+
+        </div>
+      </motion.div>
 
     </header>
   )
