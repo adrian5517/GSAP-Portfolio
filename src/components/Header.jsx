@@ -217,6 +217,16 @@ const Header = () => {
                   rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
                 </div>
 
+                {/* Submit Button */}
+                <motion.button 
+                type="submit"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className='w-full px-4 py-2 bg-gradient-to-r from-violet-600 to-violet-400
+                hover:from-violet-700 hover:to-purple-700 transition-all duration-300 rounded-lg shadow-md
+                hover:shadow-lg hover:shadow-violet-600/50'
+                >Send Message</motion.button>
+
               </form>
 
           </div>
