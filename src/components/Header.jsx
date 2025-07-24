@@ -113,8 +113,8 @@ const Header = () => {
         stiffness: 100,
         damping: 15,
       }}
-      className='ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400
-      to-gray-200 text-violet-700 font-bold hover:from-violet-700 hover:to-purple-700 hover:text-white
+      className='ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 sm:w-auto h-10 text-sm font-poppins
+      to-gray-200 text-violet-700 font-semibold hover:from-violet-700 hover:to-purple-700 hover:text-white
       transition-all duration-500'>Hire Me</motion.button>
 
       {/* Mobile Menu */}
