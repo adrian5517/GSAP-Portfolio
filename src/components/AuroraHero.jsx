@@ -8,6 +8,7 @@ import {
   motion,
   animate,
 } from "framer-motion";
+import Spline from "@splinetool/react-spline";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -32,10 +33,10 @@ export const AuroraHero = () => {
       style={{
         backgroundImage,
       }}
-      className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
+      className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative overflow-hidden bg-gray-950 text-gray-200"
     >
       {/* Left Section */}
-      <div>
+      <div className="flex-1 z-10 xl:pr-8 mb-8 xl:mb-0">
         <motion.h1
         initial={{ opacity: 0 , y: 80}}
         animate={{ opacity : 1, y: 0}}
@@ -55,7 +56,7 @@ export const AuroraHero = () => {
         transition={{
           type: "spring",
           stiffness: 40,
-          delay: 1.3,
+          delay: 1.8,
           duration: 1.5,
         }}
         className="text-lg md:text-1xl font-poppins
@@ -74,7 +75,17 @@ export const AuroraHero = () => {
 
       </div>
 
+      {/* Right Section */}
+      <div className="flex-1 z-10 xl:pl-8 flex items-center justify-center">
+        <div className="w-full h-96 xl:h-[500px] max-w-lg xl:max-w-none">
+          {/* <Spline 
+            scene="https://prod.spline.design/ZH0N0X5EF3nNQdC1/scene.splinecode"
+            "
+          /> */}
 
+           <Spline scene="https://prod.spline.design/mQS8G3uOJRpGC30W/scene.splinecode" />
+        </div>
+      </div>
 
       <div className="absolute inset-0 z-0">
         <Canvas>
