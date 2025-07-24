@@ -1,3 +1,5 @@
+import { m } from 'framer-motion';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        mrsSheppards: ['Mrs Sheppards', 'cursive'],
       },
     },
   },
