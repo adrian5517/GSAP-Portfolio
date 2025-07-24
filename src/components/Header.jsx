@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion , AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import {FiGithub , FiFacebook , FiLinkedin ,FiMenu , FiX} from 'react-icons/fi';
 
@@ -170,6 +170,7 @@ const Header = () => {
           <button 
           onClick={()=>{
             toggleMenu();
+            openContactForm();
           }}
           className='mt-4 block w-full px-4 py-2 font-poppins text-center text-white
           rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-semibold'>Contact me</button>
@@ -179,7 +180,8 @@ const Header = () => {
 
 
       {/* Contact Form Modal */}
-      {contactOpen && (
+      <AnimatePresence>
+        {contactOpen && (
         <motion.div 
         initial={{opacity: 0,}}
         animate={{opacity: 1}}
@@ -188,7 +190,18 @@ const Header = () => {
         className="fixed inset-0 bg-black/50 background-blur-sm z-50 flex items-center justify-center p-4"
         >
 
-          <div className='bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6'>
+          <motion.div 
+          initial={{ scale: 0.8, opacity: 0 , y: 30}}
+          animate={{scale: 1, opacity:1, y: 0}}
+          exit={{ scale: 0.8, opacity: 0, y: 30 }}
+          transition={{
+            type:"spring",
+            damping: 30,
+            stiffness: 200,
+            duration: 0.8
+          }}
+
+          className='bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6'>
             <div className='flex justify-between items-center mb-4'>
               <h1 className='text-2xl font-bold text-gray-300'>Get in Touch</h1>
 
@@ -229,10 +242,12 @@ const Header = () => {
 
               </form>
 
-          </div>
+          </motion.div>
 
         </motion.div>
       )}
+      </AnimatePresence>
+      
 
     </header>
   )
