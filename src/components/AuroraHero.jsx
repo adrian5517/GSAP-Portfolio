@@ -47,7 +47,7 @@ export const AuroraHero = () => {
           duration: 1.5,
         }}
         className="text-5xl md:text-7xl
-        lg:text-8xl font-bold z-10 mb-6 font-mrsSheppards tracking-widest">Web & Mobile <br /> Developer
+        lg:text-8xl font-bold z-10 mb-6 font-orbitron tracking-wider">Web & Mobile <br /> Developer
          </motion.h1>
 
         <motion.p 

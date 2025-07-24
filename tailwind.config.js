@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         mrsSheppards: ['Mrs Sheppards', 'cursive'],
+        orbitron: ['Orbitron', 'sans-serif'],
       },
     },
   },

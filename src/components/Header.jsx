@@ -44,7 +44,7 @@ const Header = () => {
         </motion.div>
         {/* Navigation Links */}
         <nav className='lg:flex hidden space-x-8'>
-        {["Home", "About", "Projects", "Contact"].map((item,index) =>(
+        {["Home", "About", "Projects", "Skills", "Contact"].map((item,index) =>(
           <motion.a 
           key={item}
           initial={{ opacity: 0, y: -20}}
