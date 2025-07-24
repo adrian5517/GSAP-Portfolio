@@ -12,6 +12,11 @@ const Header = () => {
     setIsOpen(!isOpen);
   }
 
+  //State to track if the contact form is open
+  const [contactOpen, setContactOpen] = useState(false);
+  const openContactForm = ()=> setContactOpen(true);
+  const closeContactForm = () => setContactOpen(false);
+
   return (
     <header className="absolute w-full z-50 transition-all duration-300">
       <div className='container 
@@ -98,6 +103,7 @@ const Header = () => {
 
       {/* Hire Me Button */}
       <motion.button 
+      onClick={openContactForm}
       initial={{ opacity: 0 , scale: 0.8}}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -170,6 +176,31 @@ const Header = () => {
 
         </div>
       </motion.div>
+
+
+      {/* Contact Form Modal */}
+      {contactOpen && (
+        <motion.div 
+        initial={{opacity: 0,}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        transition={{ duration: 0.5 }}
+        className="fixed inset-0 bg-black/50 background-blur-sm z-50 flex items-center justify-center p-4"
+        >
+
+          <div className='bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6'>
+            <div className='flex justify-between items-center mb-4'>
+              <h1 className='text-2xl font-bold text-gray-300'>Get in Touch</h1>
+
+              <button onClick={closeContactForm}>
+                <FiX className='w-5 h-5 text-gray-300 font-extrabold' />
+              </button>
+            </div>
+              
+          </div>
+
+        </motion.div>
+      )}
 
     </header>
   )
