@@ -4,6 +4,7 @@ import { AuroraHero } from './components/AuroraHero'
 import CustomCursor from './components/CustomCursor'
 // import { RevealLinks } from './components/RevealLinks'
 // import Trippy from './components/TrippyScroll'
+import About from './pages/About'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       
       
       <CustomCursor/>
+      <About />
       {/* <RevealLinks />
       <Trippy /> */}
       
