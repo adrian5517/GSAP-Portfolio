@@ -60,18 +60,7 @@ export const AuroraHero = () => {
           duration: 1.5,
         }}
         className="text-lg md:text-1xl font-poppins
-        lg:text-2xl text-purple-200 max-w-2xl">I’m a web and mobile developer specializing
-           in the MERN stack, creating responsive, use
-           -friendly websites and mobile applications
-            that solve real-world problems and help
-             businesses grow. With a strong foundation
-              in both front-end and back-end development, 
-              I enjoy transforming ideas into functional
-              , high-quality digital solutions. 
-              My focus is on writing clean, 
-              maintainable code and delivering 
-              reliable products that meet client
-               needs and exceed user expectations.</motion.p>
+        lg:text-2xl text-purple-200 max-w-2xl">I'm a MERN stack web and mobile developer focused on building responsive, user-friendly applications that solve real-world problems and support business growth. I specialize in both front-end and back-end development, delivering clean, maintainable, and high-quality solutions that meet client needs and exceed user expectations.</motion.p>
 
       </div>
 
