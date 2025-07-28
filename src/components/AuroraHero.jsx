@@ -33,7 +33,7 @@ export const AuroraHero = () => {
       style={{
         backgroundImage,
       }}
-      className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative overflow-hidden bg-gray-950 text-gray-200"
+      className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between px-10 relative overflow-hidden bg-gray-950 text-gray-200"
     >
       {/* Left Section */}
       <div className=" z-10 mb-10 lg:mb-0 flex flex-col items-start justify-center max-w-2xl">
@@ -74,10 +74,12 @@ export const AuroraHero = () => {
 
            {/* <Spline scene="https://prod.spline.design/mQS8G3uOJRpGC30W/scene.splinecode" /> */}
 
-              {/* <Spline scene="https://prod.spline.design/DRogXwsymxfQ9y3q/scene.splinecode" /> */}
+              <Spline
+               className="block md:hidden absolute md:w-[50%] right-[-5%] bottom-20 h-[100px] w-[100px] z-0"
+               scene="https://prod.spline.design/DRogXwsymxfQ9y3q/scene.splinecode" />
 
            <Spline 
-           className="absolute xl:right-[-28%] md:h-[300px] md:w-[300px] md:right-[-13%] sm:h-[200px] sm:w-[200px] sm:right-[-13%] z-0"
+           className="hidden md:block absolute xl:right-[-28%] md:h-[300px] md:w-[300px] md:right-[-13%] z-0"
            scene="https://prod.spline.design/92WEQWMG7mJxHgek/scene.splinecode" />
         
 
