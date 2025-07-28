@@ -1,7 +1,7 @@
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
-import { FiArrowRight } from "react-icons/fi";
+
 import {
   useMotionTemplate,
   useMotionValue,
@@ -10,7 +10,7 @@ import {
 } from "framer-motion";
 import Spline from "@splinetool/react-spline";
 
-const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
+const COLORS_TOP = ["#1E67C6", "#CE84CF", "#DD335C"];
 
 export const AuroraHero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -36,7 +36,7 @@ export const AuroraHero = () => {
       className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative overflow-hidden bg-gray-950 text-gray-200"
     >
       {/* Left Section */}
-      <div className=" z-10">
+      <div className=" z-10 mb-10 lg:mb-0 flex flex-col items-start justify-center max-w-2xl">
         <motion.h1
         initial={{ opacity: 0 , y: 80}}
         animate={{ opacity : 1, y: 0}}
@@ -77,7 +77,7 @@ export const AuroraHero = () => {
               {/* <Spline scene="https://prod.spline.design/DRogXwsymxfQ9y3q/scene.splinecode" /> */}
 
            <Spline 
-           className="absolute xl:right-[-28%] md:items-center justify-center md:right-[-13%]  "
+           className="absolute xl:right-[-28%] md:h-[300px] md:w-[300px] md:right-[-13%] sm:h-[200px] sm:w-[200px] sm:right-[-13%] z-0"
            scene="https://prod.spline.design/92WEQWMG7mJxHgek/scene.splinecode" />
         
 
