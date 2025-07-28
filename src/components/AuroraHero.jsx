@@ -33,7 +33,7 @@ export const AuroraHero = () => {
       style={{
         backgroundImage,
       }}
-      className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between px-10 relative overflow-hidden bg-gray-950 text-gray-200"
+      className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative sm:p-0 sm:m-0 overflow-hidden bg-gray-950 text-gray-200"
     >
       {/* Left Section */}
       <div className=" z-10 mb-10 lg:mb-0 flex flex-col items-start justify-center max-w-2xl">
@@ -46,7 +46,7 @@ export const AuroraHero = () => {
           delay: 1.3,
           duration: 1.5,
         }}
-        className="text-5xl md:text-7xl
+        className="text-5xl md:text-7xl md:text-shadow-lg lg:text-9xl text-white font-orbitron tracking-wide leading-tight
         lg:text-8xl font-bold z-10 mb-6 font-orbitron tracking-wider">Web & Mobile <br /> Developer
          </motion.h1>
 
@@ -75,7 +75,7 @@ export const AuroraHero = () => {
            {/* <Spline scene="https://prod.spline.design/mQS8G3uOJRpGC30W/scene.splinecode" /> */}
 
               <Spline
-               className="block md:hidden absolute md:w-[50%] right-[-5%] bottom-20 h-[100px] w-[100px] z-0"
+               className="block md:hidden absolute md:w-[10px] md:h-[10px] right-[-5%] bottom-20 h-[100px] w-[100px] z-0"
                scene="https://prod.spline.design/DRogXwsymxfQ9y3q/scene.splinecode" />
 
            <Spline 
