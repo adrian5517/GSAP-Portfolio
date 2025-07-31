@@ -33,10 +33,10 @@ export const AuroraHero = () => {
       style={{
         backgroundImage,
       }}
-      className="h-screen flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative sm:p-0 sm:m-0 overflow-hidden bg-gray-950 text-gray-200"
+      className="h-screen flex lg:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative sm:p-0 sm:m-0 overflow-hidden bg-gray-950 text-gray-200"
     >
       {/* Left Section */}
-      <div className=" z-10 mb-10 lg:mb-0 flex flex-col items-start justify-center max-w-2xl">
+      <div className=" mb-10 lg:mb-0 flex flex-col items-start justify-center max-w-2xl">
         <motion.h1
         initial={{ opacity: 0 , y: 80}}
         animate={{ opacity : 1, y: 0}}
@@ -46,8 +46,8 @@ export const AuroraHero = () => {
           delay: 1.3,
           duration: 1.5,
         }}
-        className="text-5xl md:text-7xl md:text-shadow-lg lg:text-9xl text-white font-orbitron tracking-wide leading-tight
-        lg:text-8xl font-bold z-10 mb-6 font-orbitron tracking-wider">Web & Mobile <br /> Developer
+        className="text-3xl md:text-5xl md:text-shadow-lg lg:text-9xl text-white font-orbitron tracking-wide leading-tight
+        lg:text-5xl font-bold z-10 mb-6 font-orbitron tracking-wider">Web & Mobile <br /> Developer
          </motion.h1>
 
         <motion.p 
@@ -60,7 +60,7 @@ export const AuroraHero = () => {
           duration: 1.5,
         }}
         className="text-lg md:text-1xl font-poppins
-        lg:text-2xl text-purple-200 max-w-2xl">I'm a MERN stack web and mobile developer focused on building responsive, user-friendly applications that solve real-world problems and support business growth. I specialize in both front-end and back-end development, delivering clean, maintainable, and high-quality solutions that meet client needs and exceed user expectations.</motion.p>
+        lg:text-1xl text-purple-200 max-w-2xl">I'm a MERN stack web and mobile developer focused on building responsive, user-friendly applications that solve real-world problems and support business growth. I specialize in both front-end and back-end development, delivering clean, maintainable, and high-quality solutions that meet client needs and exceed user expectations.</motion.p>
 
       </div>
 
